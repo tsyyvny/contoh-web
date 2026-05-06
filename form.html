@@ -1,0 +1,43 @@
+<html>
+    <body bgcolor="black" text="white" style="padding: 10px;">
+        <h2>FORM PEMESANAN TIKET PRE-SALE</h2>
+        <form action="website_nusantara.php" method="post">
+            Isi formulir di bawah ini untuk memesan kursi Anda secara eksklusif: <br>
+            <table width="40%">
+            <tr>
+                <td>Nama Pemesan</td> <td>: <input type="text" name="nama" placeholder="Nama Lengkap"></td>
+            </tr> 
+            <tr>
+                <td>Email</td> <td>: <input type="text" name="email" placeholder="email@domain.com"></td>
+            </tr>
+            <tr>
+                <td>Kategori Tiket</td><td>: <input type="radio" name="tiket" value="Reguler 2D">Reguler 2D 
+                    <input type="radio" name="tiket" value="IMAX 3D">IMAX 3D 
+                    <input type="radio" name="tiket" value="Premiere VIP">Premiere VIP
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih Lokasi</td>
+                <td>: <select size="1" name="lokasi">
+                    <option>Jakarta Pusat</option>
+                    <option>Jakarta Barat</option>
+                    <option>Jakarta Selatan</option>
+                    <option>Bandung</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Pilihan Snack</td>
+                <td>: <input type="checkbox" name="popcorn" value="popcorn">Popcorn
+                    <input type="checkbox" name="sodalarge" value="sodalarge">Soda Large
+                    <input type="checkbox" name="nachos" value="nachos">Nachos
+                </td> 
+            </tr>
+            <tr>
+                <td> </td> <td> <button type="submit" name="kirim">Kirim Pesanan</button>
+            <button type="reset">Reset</button></td>
+            </tr>
+            </table>
+        </form>
+        <hr>
+    </body>
+</html>
